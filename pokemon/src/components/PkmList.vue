@@ -7,13 +7,14 @@
         v-for="pokemon in pokemons"
         :key="pokemon.name"
       >
-        {{ pokemon.name }}
+        <PkmnPreview :pokemon="pokemon" />
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import PkmnPreview from "./PkmnPreview.vue";
 export default {
   name: "PkmnList",
   data() {
@@ -36,6 +37,9 @@ export default {
         alert(error);
       }
     },
+  },
+  components: {
+    PkmnPreview,
   },
 };
 </script>

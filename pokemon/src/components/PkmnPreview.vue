@@ -2,6 +2,7 @@
   <div>
     <div class="pkmn-container">
       <h1 id="query">{{ pokemon.name }}</h1>
+      <img :src="sprite" alt="" />
     </div>
   </div>
 </template>
@@ -30,6 +31,12 @@ export default {
       } catch (error) {
         console.log(error);
       }
+    },
+  },
+  computed: {
+    sprite: function() {
+      //return this.singlePokemon.sprites.front_default;
+      return `https://pokeres.bastionbot.org/images/pokemon/${this.singlePokemon.id}.png`;
     },
   },
 };

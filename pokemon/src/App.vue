@@ -22,7 +22,8 @@
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #fff;
+    font-size: 3rem;
 
     &.router-link-exact-active {
       color: #42b983;

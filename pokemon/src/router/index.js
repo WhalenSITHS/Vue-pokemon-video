@@ -10,12 +10,12 @@ const routes = [
     name: "Home",
     component: Home,
   },
-  /*  {
-    path: "/about",
-    name: "About",
+  {
+    path: "/pkmn/:id",
+    name: "Pkmn",
 
-    component: () => import("../views/About.vue"),
-  }, */
+    component: () => import("../views/Pkmn.vue"),
+  },
 ];
 
 const router = new VueRouter({

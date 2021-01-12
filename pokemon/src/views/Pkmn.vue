@@ -1,6 +1,9 @@
 <template>
   <div class="container">
-    <div class="poke-card">
+    <div
+      class="poke-card"
+      v-tilt="{ speed: 300, perspective: 1200, glare: true }"
+    >
       <h2>{{ singlePokemon.name }}</h2>
       <img :src="sprite" alt="" />
       <h3 :style="backgroundColor">{{ singlePokemon.types[0].type.name }}</h3>
